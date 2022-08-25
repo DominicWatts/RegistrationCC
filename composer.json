@@ -1,0 +1,34 @@
+{
+    "name": "dominicwatts/registrationcc",
+    "description": "Magento 2 send copy of customer registration email to configured email address",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dominic Watts",
+            "email": "dominic@pixie.agency"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require": {
+        "magento/framework": "*",
+        "php": ">=7.1.0",
+        "magento/module-store": "*",
+        "magento/module-customer": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "PixieMedia\\RegistrationCC\\": ""
+        }
+    }
+}

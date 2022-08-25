@@ -34,6 +34,11 @@ class RegisterSuccess implements ObserverInterface
      * @var \Magento\Framework\App\Config\ScopeConfigInterface
      */
     protected $_scopeConfig;
+    
+    /**
+     * @var \Magento\Store\Model\StoreManagerInterface
+     */
+    protected $_storeManager;
 
     /**
      * @var \PixieMedia\RegistrationCC\Helper\Config
